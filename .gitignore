@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Node/Web
+node_modules/
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Agent
+.gemini/
+
+# Secrets
+credentials.json
+token.json
+service_account.json
+client_secret*.json
+

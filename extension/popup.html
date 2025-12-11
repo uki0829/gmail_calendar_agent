@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Agent</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>CALENDAR<br>AGENT</h1>
+      <div id="status-indicator" class="status-dot"></div>
+    </div>
+
+    <div class="content">
+      <div class="status-text">
+        <span id="status">INITIALIZING</span>
+      </div>
+
+      <div class="dashboard">
+        <div class="stat-card">
+          <span class="stat-value" id="events-count">0</span>
+          <span class="stat-label">EVENTS TODAY</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="priority-count">0</span>
+          <span class="stat-label">PRIORITY</span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="start-btn" class="btn">START</button>
+        <button id="stop-btn" class="btn">STOP</button>
+      </div>
+
+      <div id="feed-container" class="feed">
+        <!-- Dynamic Email Cards will go here -->
+      </div>
+    </div>
+
+    <div class="footer">
+      <div id="message"></div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>

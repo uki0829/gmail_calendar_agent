@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Extension Test</title>
+</head>
+
+<body>
+    <h1>Testing Extension Connection</h1>
+    <button id="test">Test Server Connection</button>
+    <pre id="result"></pre>
+
+    <script>
+        document.getElementById('test').addEventListener('click', async () => {
+            const result = document.getElementById('result');
+            try {
+                const response = await fetch('http://127.0.0.1:8000/status');
+                const data = await response.json();
+                result.textContent = 'SUCCESS!\n' + JSON.stringify(data, null, 2);
+            } catch (error) {
+                result.textContent = 'ERROR: ' + error.message;
+            }
+        });
+    </script>
+</body>
+
+</html>
