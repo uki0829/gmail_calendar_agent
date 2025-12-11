@@ -71,6 +71,4 @@ A smart agent that helps you manage your Gmail and Calendar. It extracts importa
 - `credentials.json`: (Required) Google OAuth credentials.
 - `token.json`: (Generated) Stores user access tokens.
 
-## License
 
-[License Name]
